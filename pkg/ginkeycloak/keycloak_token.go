@@ -22,6 +22,7 @@ type KeyCloakToken struct {
 	FamilyName        string                 `json:"family_name,omitempty"`
 	Email             string                 `json:"email,omitempty"`
 	RealmAccess       ServiceRole            `json:"realm_access,omitempty"`
+	Groups            []string               `json:"groups"`
 }
 
 type ServiceRole struct {
